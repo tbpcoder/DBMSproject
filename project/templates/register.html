@@ -1,0 +1,25 @@
+<link rel ="stylesheet" href="/static/register.css">
+
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="register">
+<form action="/register" method="post">
+    <h3>Name: 
+    <input name="Name" type="text" placeholder="Name"></h3>
+    <h3>Vehicle: 
+    <input name="Vehicle_no" type="text" placeholder="Vehicle number"></h3>
+    <h3>Vehicle type: 
+    <select name="Vehicle_type">
+        <option disable selected>Vehicle type</option>
+        <option value = "Two-wheeler">Two-wheeler</option>
+        <option value = "Four-wheeler">Four-wheeler</option>
+    </select></h3>
+    <h3>Contact Number: 
+    <input name="Contact_no" type="text" placeholder="Contact number"></h3>
+    <div class="z"><input type="submit" value="Add"></div>
+</form>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+    Sid = 1
+    wing_code = "A"
+    Fid = 1
+    for i in range(10):
+        if i < 5:
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)
+        else:
+            wing_code = "B"
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)
+
+        Sid += 1
+    Fid = 2
+    for i in range(20):
+        if i < 10:
+            wing_code = "A"
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)
+        else:
+            wing_code = "B"
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)        
+        Sid += 1
+    Fid = 3
+    for i in range(20):
+        if i < 10:
+            wing_code = "A"
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)
+        else:
+            wing_code = "B"
+            db.execute("insert into Parking_slot values (?,?,?)", Sid, wing_code, Fid)        
+        Sid += 1

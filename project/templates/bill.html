@@ -1,0 +1,15 @@
+<link rel ="stylesheet" href="/static/bill.css">
+
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if not amount %}
+
+        <h1 class="bill">{{  message  }}</h2>
+
+    {% else %}
+        
+    <h1 class="bill">Your bill amount is {{  amount  }}</h2>
+
+    {% endif %}
+{% endblock %}

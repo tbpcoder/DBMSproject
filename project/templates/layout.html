@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/static/layout.css">
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>VPMS</title>
+        <h1 class="lay">Vehicle Parking Management System</h1>
+        <div class="main">
+        <h2 class="cate">Options</h2>
+        <a class="lo" href="/logout">Logout</a>
+        <a class="ho" href="/">Home</a>
+        <a class="al" href="/allot">Allot</a>
+        <a class="lg" href="/logs">Logs</a>
+        <a class="cu" href="/customers">Customers</a>
+        </div>
+    </head>
+    <body>
+        <div class="mn">
+        {% block body %}{% endblock %}
+    </div>
+    </body>
+    
+</html>

@@ -1,0 +1,17 @@
+<link rel ="stylesheet" href="/static/type.css">
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="typ">
+<h2 class="veh">Vehicle type</h2>
+<form action="/allot" method="POST">
+    <select name="type">
+        <option disable selected>Select</option>
+        <option value = "Two-wheeler">Two-wheeler</option>
+        <option value = "Four-wheeler">Four-wheeler</option>
+    </select>
+    <input type = "submit" value = "Allot">
+</form>
+</div>
+
+{% endblock %}

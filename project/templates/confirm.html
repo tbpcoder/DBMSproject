@@ -1,0 +1,14 @@
+<link rel ="stylesheet" href="/static/confirm.css">
+{% extends "layout.html" %}
+{% block body %}
+<div class="con">
+<h2 class="co"> Your Slot number is {{  Sid  }} on Floor {{  Fid  }} Wing {{  Wing_code  }}</h2>
+<form action="/insert" method="POST">
+    <input name ="Sid" type ="hidden" value="{{  Sid  }}">
+    <input name ="Vehicle_type" type ="hidden" value="{{  Vehicle_type  }}">
+    <input name ="Cid" type ="text" placeholder="Customer ID">
+    <input type="submit" value="Confirm">
+
+</form>
+</div>
+{% endblock %}

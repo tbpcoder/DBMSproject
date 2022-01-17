@@ -1,0 +1,61 @@
+<link rel ="stylesheet" href="/static/logs.css">
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1 class="log">Parking Slips</h1>
+
+<div class="tableFixHead">
+    <table>
+        <thead>
+            <tr>
+                <th>Slip id</th>
+                <th>Name</th>
+                <th>Slot id</th>
+                <th>Customer id</th>
+                <th>Entry Time</th>
+                <th>Exit Time</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for slip in slips1 %}
+                  
+                <tr>
+                    <td>{{  slip["Slip_id"]  }}</td>
+                    <td>{{  slip["Name"]  }}</td>
+                    <td>{{  slip["Sid"]  }}</td>
+                    <td>{{  slip["Cid"]  }}</td>
+                    <td>{{  slip["Entry_time"]  }}</td>
+                    <td>-</td>
+                    <td>
+                        <form action="/bill" method="post">
+                            <input name="Slip_id" type="hidden" value="{{ slip["Slip_id"] }}">
+                            <input name="Sid" type="hidden" value="{{ slip["Sid"] }}">
+                            <input name="Cid" type="hidden" value="{{ slip["Cid"] }}">
+                            <input type="submit" value="Bill">
+
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+
+            {% for slip in slips2 %}
+            <tr>
+                <td>{{  slip["Slip_id"]  }}</td>
+                <td>{{  slip["Name"]  }}</td>
+                <td>{{  slip["Sid"]  }}</td>
+                <td>{{  slip["Cid"]  }}</td>
+                <td>{{  slip["Entry_time"]  }}</td>
+                <td>{{  slip["Exit_time"]  }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+    
+
+
+
+{% endblock %}

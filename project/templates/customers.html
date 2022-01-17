@@ -1,0 +1,35 @@
+<link rel ="stylesheet" href="/static/customer.css">
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1 class="cust">Customers</h1>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Vehicle Number</th>
+                <th>Vehicle Type</th>
+                <th>Contact No.</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in entries %}
+                  
+                <tr>
+                    <td>{{ entry["Cid"]  }}</td>
+                    <td>{{  entry["Name"]  }}</td>
+                    <td>{{  entry["Vehicle_no"]  }}</td>
+                    <td>{{  entry["Vehicle_type"]  }}</td>
+                    <td>{{  entry["Contact_no"]  }}</td>
+                    
+                </tr>
+
+            {% endfor %}
+            <a href="/register"><div class="button">New Customer</div></a>
+{% endblock %}

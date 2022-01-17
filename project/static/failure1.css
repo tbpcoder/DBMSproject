@@ -1,0 +1,30 @@
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    height: 750px;
+    background-image: url("cat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.er{
+    background: black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+.lay{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding: 10px;
+    margin: 0px;
+}
+.cate{
+    margin: 2px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    color: white;
+}
+.main{
+    border: 2px black;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+}
+.lo,.ho,.al,.lg,.cu{
+    color: rgb(255, 255, 255);
+    border:1px solid black;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 3px;
+}
+.mn{
+    height: 680px;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
